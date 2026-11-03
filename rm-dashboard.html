@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>RM Dashboard | Finova</title><style>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>RM Dashboard | Sadeed</title><style>
 :root{--navy:#10243b;--navy-2:#193b56;--teal:#087c79;--teal-dark:#056664;--mint:#e4f4f0;--bg:#f5f8fb;--paper:#fff;--line:#e4ebf1;--muted:#617284;--text:#17293b;--blue:#e8f1ff;--amber:#fff4df;--amber-fg:#92620d;--green:#dff5e9;--green-fg:#166b45;--red:#fff0ee;--red-fg:#a63f39;--shadow:0 8px 24px rgba(21,46,68,.045)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,'Segoe UI',Arial,sans-serif;font-size:14px;line-height:1.65}
 button,input,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}
@@ -34,7 +34,7 @@ footer{border-top:1px solid var(--line);color:#8897a2;padding:20px 0;font-size:1
 @media(max-width:880px){.cols-4{grid-template-columns:repeat(2,minmax(0,1fr))}.cols-3{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{flex-wrap:wrap;padding:13px 0}.nav-links{width:100%;justify-content:flex-start}.hero-content{align-items:flex-start;flex-direction:column}.hero-pill{display:none}}
 @media(max-width:610px){.container{width:min(100% - 24px,1170px)}.cols-2,.cols-3,.cols-4,.form-grid{grid-template-columns:1fr}.metric-value{font-size:21px}.hero{padding:24px 0 28px}.main{padding:22px 0 40px}.card{padding:15px}.navlink,.lang-switch{padding:7px 9px;font-size:11px}.btns .btn{flex-grow:1}.section-title{align-items:flex-start;flex-direction:column;gap:3px}}
 </style></head>
-<body><header class="site-header"><div class="container nav"><a class="logo" href="index.html" aria-label="Finova home"><span class="logo-mark">F</span><span>Finova</span></a><nav class="nav-links" aria-label="Main navigation"><a class="navlink" href="index.html" data-i18n="home">الرئيسية</a><a class="navlink active" href="rm-dashboard.html" data-i18n="rm">لوحة موظف البنك</a><a class="navlink " href="track-application.html" data-i18n="tracking">متابعة الطلب</a><button class="lang-switch" id="langSwitch" type="button">English</button></nav></div></header><section class="hero"><div class="container hero-content"><div><div class="eyebrow" data-i18n="heroLabel">CORPORATE FINANCING · DEMO</div><h1 data-i18n="rmTitle"></h1><p data-i18n="rmIntro"></p></div><span class="hero-pill" data-i18n="demo">نموذج تجريبي فقط</span></div></section>
+<body><header class="site-header"><div class="container nav"><a class="logo" href="index.html" aria-label="Sadeed home"><span class="logo-mark">F</span><span>Sadeed</span></a><nav class="nav-links" aria-label="Main navigation"><a class="navlink" href="index.html" data-i18n="home">الرئيسية</a><a class="navlink active" href="rm-dashboard.html" data-i18n="rm">لوحة موظف البنك</a><a class="navlink " href="track-application.html" data-i18n="tracking">متابعة الطلب</a><button class="lang-switch" id="langSwitch" type="button">English</button></nav></div></header><section class="hero"><div class="container hero-content"><div><div class="eyebrow" data-i18n="heroLabel">CORPORATE FINANCING · DEMO</div><h1 data-i18n="rmTitle"></h1><p data-i18n="rmIntro"></p></div><span class="hero-pill" data-i18n="demo">نموذج تجريبي فقط</span></div></section>
 
 <main class="container main">
  <div class="section-title"><h2 data-i18n="applicant">معلومات الشركة</h2></div>
@@ -81,7 +81,7 @@ footer{border-top:1px solid var(--line);color:#8897a2;padding:20px 0;font-size:1
 </main>
 <footer><div class="container" data-i18n="foot"></div></footer><div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
-const STORE_KEY = 'finova_corporate_demo_v2';
+const STORE_KEY = 'Sadeed_corporate_demo_v2';
 const DEMO = Object.freeze({id:'',companyName:'',sector:'',purpose:'',annualRevenue:15000000,requestedAmount:2000000,cashAvailable:3000000,existingDebtService:350000,rate:8,term:3,status:'submitted',lastUpdated:'',demo:true,appVersion:3});
 const STATES=['submitted','review','documents','credit'];
 let lang='ar';
@@ -101,7 +101,7 @@ const translations={
        trackCurrent:'الحالة الحالية',trackAmount:'مبلغ التمويل المطلوب',trackPurpose:'الغرض',trackNext:'الخطوة التالية',nextSubmitted:'بانتظار مراجعة مدير العلاقة.',nextReview:'الموظف يراجع البيانات وقد يطلب مستندات.',nextDocuments:'استكمال المستندات المطلوبة قبل المتابعة.',nextCredit:'بانتظار إجراءات التقييم الائتماني لدى البنك.',
        sectorPlaceholder:'القطاع (اختياري)',purposePlaceholder:'الغرض من التمويل (اختياري)',notSelected:'لم يتم التحديد',idPending:'قيد الإنشاء',
        security:'نسخة تجريبية ببيانات افتراضية، دون ربط مباشر بالبنك.',saveMsg:'تم تحديث البيانات في هذا المتصفح فقط.',resetMsg:'تمت إعادة تعيين بيانات الطلب التجريبي.',unavailable:'تعذر حفظ البيانات محليًا في المتصفح.',
-       currentBadge:'الحالة',updatedNow:'حديثًا',none:'غير متوفر',numError:'البيانات المالية يجب أن تكون أرقامًا غير سالبة، والمدة أكبر من صفر.',riskAbove:'تغطية توضيحية أعلى من 1.25 مرة',riskMid:'تغطية توضيحية بين 1 و1.25 مرة',riskBelow:'التغطية التوضيحية أقل من 1 مرة',foot:'Finova · منصة دعم القرارات المالية · نموذج أولي',viewOther:'عرض الصفحة الأخرى',
+       currentBadge:'الحالة',updatedNow:'حديثًا',none:'غير متوفر',numError:'البيانات المالية يجب أن تكون أرقامًا غير سالبة، والمدة أكبر من صفر.',riskAbove:'تغطية توضيحية أعلى من 1.25 مرة',riskMid:'تغطية توضيحية بين 1 و1.25 مرة',riskBelow:'التغطية التوضيحية أقل من 1 مرة',foot:'Sadeed · منصة دعم القرارات المالية · نموذج أولي',viewOther:'عرض الصفحة الأخرى',
        noReal:'بيانات توضيحية محفوظة محليًا؛ لا يوجد إرسال فعلي للبنك.'},
  en:{home:'Home',rm:'RM Dashboard',tracking:'Track Application',demo:'Demo Only',heroLabel:'CORPORATE FINANCING · DEMO',
        rmTitle:'Relationship Manager Dashboard',rmIntro:'Financial analysis and repayment scenarios supporting preliminary credit assessment.',
@@ -118,7 +118,7 @@ const translations={
        trackCurrent:'Current Status',trackAmount:'Requested Amount',trackPurpose:'Purpose',trackNext:'What Happens Next',nextSubmitted:'Awaiting RM review.',nextReview:'The RM is reviewing the details and may request documents.',nextDocuments:'Provide requested documents for further review.',nextCredit:'Awaiting the bank’s internal credit review process.',
        sectorPlaceholder:'Business sector (optional)',purposePlaceholder:'Financing purpose (optional)',notSelected:'Not specified',idPending:'Pending',
        security:'Prototype with fictional data and no live bank integration.',saveMsg:'Updated in this browser only.',resetMsg:'Prototype application data reset.',unavailable:'Local browser storage is unavailable.',
-       currentBadge:'Status',updatedNow:'Recently',none:'Unavailable',numError:'Financial values must be non-negative and the term greater than zero.',riskAbove:'Illustrative DSCR above 1.25x',riskMid:'Illustrative DSCR between 1.00x and 1.25x',riskBelow:'Illustrative DSCR below 1.00x',foot:'Finova · Financial Decision Support Platform · Prototype',viewOther:'View other page',
+       currentBadge:'Status',updatedNow:'Recently',none:'Unavailable',numError:'Financial values must be non-negative and the term greater than zero.',riskAbove:'Illustrative DSCR above 1.25x',riskMid:'Illustrative DSCR between 1.00x and 1.25x',riskBelow:'Illustrative DSCR below 1.00x',foot:'Sadeed · Financial Decision Support Platform · Prototype',viewOther:'View other page',
        noReal:'Illustrative local data; no live submission to a bank.'}
 };
 const t=(key)=>translations[lang][key]||key;
