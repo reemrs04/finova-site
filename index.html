@@ -1,35 +1,338 @@
+
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Finova | قرارات مالية أوضح</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>سديد | Sadeed — مصرف الإنماء</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
-:root{--navy:#052b46;--teal:#8278df;--mint:#f9e8e6;--gold:#eba18f;--ink:#10324d;--muted:#647a8d;--bg:#fff8f5;--white:#fff}*{box-sizing:border-box}body{margin:0;font-family:'IBM Plex Sans Arabic',Tahoma,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7}a{text-decoration:none;color:inherit}.wrap{max-width:1160px;margin:auto;padding:0 26px}.nav{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:700;font-size:25px;color:var(--navy);display:flex;align-items:center;gap:10px}.logo{display:grid;place-items:center;background:var(--teal);color:white;border-radius:13px;width:38px;height:38px;font-size:19px}.navlinks{display:flex;gap:28px;color:#526d7e;font-size:14px}.nav .cta,.button{border:0;background:var(--teal);color:white;padding:12px 20px;border-radius:11px;font:inherit;font-weight:600;cursor:pointer;display:inline-block}.hero{background:radial-gradient(ellipse at 82% 25%,#17466b 0,#0b3556 34%,#052b46 75%);color:white;border-radius:26px;padding:65px 7%;min-height:390px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px;overflow:hidden}.eyebrow{color:#f2b8aa;font-size:13px;font-weight:600;letter-spacing:.3px}.hero h1{font-size:45px;line-height:1.25;margin:14px 0}.hero p{color:#d7e4e8;max-width:530px;margin:0 0 25px}.hero .button{background:#eba18f;color:#10324d}.hero-art{position:relative;min-height:235px;display:grid;place-items:center}.orbit{width:235px;height:235px;border:1px solid #718aa8;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:'';position:absolute;border:1px solid #536f91;border-radius:50%;inset:22px}.orbit:after{inset:48px}.core{width:98px;height:98px;background:#f9e8e6;color:#8278df;border-radius:28px;display:grid;place-items:center;font-size:38px;z-index:2;box-shadow:0 12px 35px #061b2a}.bubble{position:absolute;background:white;color:#23485a;border-radius:12px;padding:9px 13px;font-size:12px;box-shadow:0 8px 22px #061b2a44}.b1{top:22px;right:-10px}.b2{bottom:20px;right:5px}.b3{left:-6px;top:90px}.section{padding:72px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 34px}.section-head h2{color:var(--navy);font-size:31px;margin:6px 0}.section-head p{color:var(--muted);margin:0}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid #e4ece9;border-radius:18px;padding:24px;box-shadow:0 7px 24px #193d4710}.stepno{font-size:12px;color:var(--teal);font-weight:700;background:#f4eefe;padding:6px 10px;border-radius:9px}.card h3{margin:16px 0 7px;color:var(--navy);font-size:20px}.card p{color:var(--muted);font-size:14px;margin:0 0 13px}.chips{display:flex;flex-wrap:wrap;gap:7px}.chip{font-size:12px;background:#f1f6f4;border-radius:30px;padding:5px 10px;color:#416071}.arrow{text-align:center;color:#83afa4;font-size:24px;padding-top:26px}.demo{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}.demo-panel{background:white;border:1px solid #e1ebe7;border-radius:20px;padding:26px}.demo-panel h3{margin:0;color:var(--navy)}.label{font-size:13px;font-weight:600;margin:16px 0 6px;display:block}.input,select{width:100%;border:1px solid #d7e3df;padding:12px;border-radius:10px;font:inherit;background:white;color:var(--ink)}input[type=range]{width:100%;accent-color:var(--teal)}.rangeinfo{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}.result{margin-top:19px;padding:18px;background:var(--mint);border-radius:14px}.result small{color:#526f6e}.result strong{display:block;color:var(--teal);font-size:29px}.result p{font-size:13px;margin:0;color:#496b69}.disclaimer{font-size:11px!important;color:#697e85!important;margin-top:10px!important}.handoff{background:var(--navy);color:white;padding:18px;border-radius:14px;margin-top:16px}.handoff span{color:#acdccc;font-size:12px}.handoff h4{margin:2px 0 5px}.handoff p{margin:0;color:#d6e3e5;font-size:13px}.compare{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.scenario{border:1px solid #dbe7e3;border-radius:12px;padding:12px;font-size:12px}.scenario strong{display:block;color:var(--navy);font-size:14px}.risk{color:#a76c1b}.impact{background:#f8eeec;padding:12px;border-radius:12px;margin-top:12px;font-size:13px}.band{background:#e3f3ed;border-radius:20px;padding:36px;display:flex;align-items:center;justify-content:space-between;gap:20px}.band h2{margin:0;color:var(--navy)}.band p{margin:5px 0;color:var(--muted)}footer{background:#052b46;color:#d3e0e3;padding:24px 0;margin-top:60px;font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px}.foot b{color:white}.mobile{display:none}
-@media(max-width:760px){.wrap{padding:0 17px}.nav{height:70px}.navlinks{display:none}.mobile{display:block}.hero{grid-template-columns:1fr;padding:38px 25px;gap:10px}.hero h1{font-size:34px}.hero-art{min-height:210px}.orbit{width:190px;height:190px}.b1{right:-4px}.b3{left:0}.steps,.demo{grid-template-columns:1fr}.arrow{padding:0;transform:rotate(90deg)}.section{padding:52px 0}.band{display:block}.band .button{margin-top:15px}.foot{display:block}.foot span{display:block;margin-top:8px}}
-.lang-toggle{border:1px solid #ddd8f4;background:#fff;color:#8278df;padding:9px 14px;border-radius:10px;font:inherit;font-weight:700;cursor:pointer;white-space:nowrap}html[dir="ltr"] body{direction:ltr}html[dir="ltr"] .nav,html[dir="ltr"] .boxhead,html[dir="ltr"] .compare-action,html[dir="ltr"] .foot{direction:ltr}html[dir="ltr"] .boxhead,html[dir="ltr"] .compare-action,html[dir="ltr"] .foot{text-align:left}html[dir="ltr"] th:first-child,html[dir="ltr"] td:first-child{right:auto;left:0;text-align:left}
-</style></head>
+:root{--dark:#123e38;--green:#087d67;--mint:#e6f4ee;--gold:#c49b5a;--ink:#193b36;--muted:#607b75;--bg:#f7faf8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans Arabic',Tahoma,sans-serif;line-height:1.8}
+.wrap{max-width:1150px;margin:auto;padding:0 22px}
+a{text-decoration:none;color:inherit}
+header{background:white;border-bottom:1px solid #e2ebe6}
+.nav{min-height:83px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{font-size:29px;font-weight:700;color:var(--dark)}
+.brand small{display:block;font-size:12px;font-weight:500;color:var(--green);line-height:1.2}
+.lang{background:white;border:1px solid var(--green);color:var(--green);border-radius:10px;padding:9px 19px;font:inherit;font-weight:700;cursor:pointer}
+.hero{background:linear-gradient(125deg,#103b35,#087d67);color:white;padding:75px 20px;text-align:center}
+.hero h1{font-size:clamp(31px,5vw,51px);margin:12px 0}
+.hero p{max-width:680px;margin:0 auto;color:#e2f3eb;font-size:17px}
+.eyebrow{color:#e7c98f;font-weight:600}
+section{padding:65px 0}
+.heading{text-align:center;margin-bottom:35px}
+.heading h2{font-size:31px;color:var(--dark);margin:5px 0}
+.heading p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:23px}
+.card{background:white;border:1px solid #e0eae5;border-radius:22px;padding:33px;box-shadow:0 8px 28px #123e3809}
+.card .symbol{font-size:36px}
+.card h3{font-size:25px;color:var(--dark);margin:8px 0}
+.card p{color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}
+.tags span{background:var(--mint);color:var(--green);padding:5px 12px;border-radius:30px;font-size:12px}
+.btn{display:inline-block;background:var(--green);color:white;border:0;border-radius:11px;padding:12px 24px;font:inherit;font-weight:700;cursor:pointer}
+.btn.secondary{background:var(--dark)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.business{background:#edf5f0}
+.panel{background:white;border:1px solid #dfebe5;border-radius:22px;padding:28px;max-width:900px;margin:auto}
+.progress{display:flex;gap:7px;margin-bottom:25px}
+.progress span{height:7px;background:#e1eae5;flex:1;border-radius:10px}
+.progress span.active{background:var(--green)}
+label{display:block;font-weight:600;font-size:14px;margin:15px 0 5px}
+input,select{width:100%;padding:12px;border:1px solid #ccdcd4;border-radius:10px;font:inherit;color:var(--ink);background:white}
+input[type=file]{font-size:13px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.note{font-size:12px;color:var(--muted);margin-top:15px}
+.summary{background:var(--mint);border-radius:15px;padding:20px;margin:18px 0}
+.summary strong{color:var(--green)}
+.resultgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.metric{background:#f5f9f6;border-radius:12px;padding:15px}
+.metric small{display:block;color:var(--muted)}
+.metric strong{font-size:20px}
+.hidden{display:none!important}
+.check{display:flex;gap:10px;align-items:center;padding:9px;background:#f6faf7;border-radius:10px;margin:8px 0}
+.check input{width:auto}
+footer{background:var(--dark);color:#d6e9df;padding:27px 0;text-align:center;font-size:13px}
+@media(max-width:700px){.grid,.resultgrid{grid-template-columns:1fr}.hero{padding:55px 18px}.card{padding:24px}.panel{padding:19px}section{padding:45px 0}}
+</style>
+</head>
 <body>
-<header class="wrap nav"><a class="brand" href="#top"><span class="logo">F</span>Finova</a><nav class="navlinks"><a href="#journey">رحلة المنصة</a><a href="#simulator">جرّب المحاكي</a><a href="#rm">للمستشار المالي</a></nav><a class="cta" href="product-comparison.html">ابدأ الاستكشاف</a><button class="lang-toggle" id="langToggle" onclick="toggleLanguage()">English</button></header>
-<main id="top" class="wrap">
-<section class="hero"><div><span class="eyebrow">منصة القرار المالي الموحد</span><h1>قرارك المالي،<br>أوضح من البداية.</h1><p>من استكشاف المنتجات إلى تجربة خيارات التمويل ثم جلسة أكثر استعدادًا مع المستشار المالي — رحلة واحدة متصلة تمنحك وضوحًا وثقة أكبر.</p><a class="button" href="#journey">اكتشف كيف تعمل المنصة ←</a></div><div class="hero-art" aria-hidden="true"><div class="orbit"><div class="core">↗</div><span class="bubble b1">قارن الخيارات</span><span class="bubble b2">سيناريوهات أوضح</span><span class="bubble b3">جرّب قبل الالتزام</span></div></div></section>
-<section class="section" id="journey"><div class="section-head"><span class="eyebrow" style="color:#8278df">رحلة مترابطة</span><h2>ثلاث خطوات. تجربة واحدة.</h2><p>تبدأ من احتياج العميل، وتنتقل بسلاسة إلى قرار مدروس بمساندة المستشار المالي.</p></div><div class="steps"><article class="card"><span class="stepno">01 · استكشف</span><h3>مركز مقارنة المنتجات</h3><p>استعرض المنتجات المالية في مكان واحد، وقارن التكلفة والرسوم والمزايا والشروط قبل اتخاذ الخطوة التالية.</p><div class="chips"><span class="chip">التمويل</span><span class="chip">البطاقات</span><span class="chip">الودائع</span><span class="chip">الاستثمارات</span></div></article><div class="arrow">←</div><article class="card"><span class="stepno">02 · جرّب</span><h3>محاكي التمويل الذكي</h3><p>أدخل مبلغ التمويل والغرض والمدة. شاهد تقديرًا أوليًا للقسط والمنتج المحتمل والمستندات المطلوبة.</p><div class="chips"><span class="chip">مرابحة</span><span class="chip">بيع آجل</span><span class="chip">تجربة قبل الالتزام</span></div></article><div class="arrow">←</div><article class="card" id="rm"><span class="stepno">03 · قرّر بثقة</span><h3>محاكي قرارات المستشار</h3><p>تنتقل مدخلات العميل إلى المستشار المالي ليبني سيناريوهات متعددة ويقارن النتائج والمخاطر والأثر المحتمل.</p><div class="chips"><span class="chip">سيناريوهات</span><span class="chip">عوائد ومخاطر</span><span class="chip">توصية بشرية</span></div></article></div></section>
-<section class="section" id="simulator" style="padding-top:8px"><div class="section-head"><span class="eyebrow" style="color:#8278df">نموذج تفاعلي تجريبي</span><h2>جرّب التمويل قبل الالتزام</h2><p>غيّر المبلغ والمدة لتشاهد كيف يمكن أن تبدو الرحلة. الأرقام توضيحية فقط.</p></div><div class="demo"><div class="demo-panel"><h3>محاكي التمويل الذكي</h3><label class="label" for="amount">مبلغ التمويل المطلوب</label><input id="amount" class="input" type="number" min="10000" max="1000000" step="5000" value="250000"><label class="label" for="term">مدة السداد: <span id="termLabel">5 سنوات</span></label><input id="term" type="range" min="1" max="10" value="5"><div class="rangeinfo"><span>سنة</span><span>10 سنوات</span></div><label class="label" for="purpose">الغرض من التمويل</label><select id="purpose"><option>توسعة الأعمال</option><option>شراء معدات</option><option>إدارة التدفقات النقدية</option></select><div class="result"><small>القسط الشهري التقديري</small><strong id="payment">—</strong><p>المنتج المقترح مبدئيًا: <b>تمويل مرابحة</b></p><p class="disclaimer">محاكاة مفاهيمية للتوضيح، وليست عرضًا تمويليًا أو نصيحة مالية. يتطلب السعر الفعلي تقييمًا من الجهة المختصة.</p></div></div><div class="demo-panel"><h3>تنتقل الصورة إلى المستشار</h3><p style="color:var(--muted);font-size:14px">عند رغبتك بالمتابعة، يرى المستشار المالي بياناتك الأولية ويبني عليها خيارات مناسبة للنقاش.</p><div class="handoff"><span>ملخص العميل · جاهز للمراجعة</span><h4>احتياج تمويلي مبدئي</h4><p><span id="summaryAmount">250,000</span> ريال · <span id="summaryTerm">5</span> سنوات · <span id="summaryPurpose">توسعة الأعمال</span></p></div><div class="compare"><div class="scenario"><strong>الخيار أ</strong>مرابحة<br><span class="risk">مخاطر: منخفضة</span></div><div class="scenario"><strong>الخيار ب</strong>بيع آجل<br><span class="risk">مخاطر: متوسطة</span></div><div class="scenario"><strong>الخيار ج</strong>مدة مختلفة<br><span class="risk">أثر نقدي: أقل</span></div></div><div class="impact">يستطيع المستشار مقارنة الأثر على التدفقات النقدية والعائد المتوقع ومناقشة المخاطر مع العميل.</div></div></div></section>
-<section class="band"><div><h2>ابدأ من احتياجك، واتخذ قرارك بوضوح.</h2><p>استكشف الخيارات بنفسك، ثم أكمل مع مستشارك المالي عندما تكون مستعدًا.</p></div><a class="button" href="#simulator">جرّب المحاكي ←</a></section>
-</main><footer><div class="wrap foot"><b>Finova · مفهوم منصة قرار مالي موحد</b><span>نموذج توضيحي لمشروع ابتكار مصرفي · لا يقدم خدمات أو توصيات مالية فعلية</span></div></footer>
-<script>const tr={
-'Finova | قرارات مالية أوضح':'Finova | Clearer Financial Decisions','Finova | مقارنة المنتجات':'Finova | Product Comparison','Finova':'Finova',
-'رحلة المنصة':'Platform Journey','جرّب المحاكي':'Try the Simulator','للمستشار المالي':'For Relationship Managers','ابدأ الاستكشاف':'Start Exploring','منصة القرار المالي الموحد':'Unified Financial Decision Platform','قرارك المالي،':'Your financial decisions,','أوضح من البداية.':'clear from the start.','من استكشاف المنتجات إلى تجربة خيارات التمويل ثم جلسة أكثر استعدادًا مع المستشار المالي — رحلة واحدة متصلة تمنحك وضوحًا وثقة أكبر.':'From exploring products to trying financing options and preparing for a conversation with a Relationship Manager — one connected journey for greater clarity and confidence.','اكتشف كيف تعمل المنصة ←':'See how it works ←','قارن الخيارات':'Compare options','سيناريوهات أوضح':'Clearer scenarios','جرّب قبل الالتزام':'Try before you commit','رحلة مترابطة':'One connected journey','ثلاث خطوات. تجربة واحدة.':'Three steps. One experience.','تبدأ من احتياج العميل، وتنتقل بسلاسة إلى قرار مدروس بمساندة المستشار المالي.':'Start with the customer’s needs and move smoothly toward an informed decision with support from a Relationship Manager.','01 · استكشف':'01 · Explore','مركز مقارنة المنتجات':'Product Comparison Hub','استعرض المنتجات المالية في مكان واحد، وقارن التكلفة والرسوم والمزايا والشروط قبل اتخاذ الخطوة التالية.':'Explore financial products in one place and compare costs, fees, benefits, and terms before deciding what to do next.','التمويل':'Financing','البطاقات':'Cards','الودائع':'Deposits','الاستثمارات':'Investments','02 · جرّب':'02 · Simulate','محاكي التمويل الذكي':'Smart Financing Simulator','أدخل مبلغ التمويل والغرض والمدة. شاهد تقديرًا أوليًا للقسط والمنتج المحتمل والمستندات المطلوبة.':'Enter a financing amount, purpose, and term. See an initial estimate of payments, a potential product, and required documents.','مرابحة':'Murabaha','بيع آجل':'Deferred Sale','تجربة قبل الالتزام':'Try before you commit','03 · قرّر بثقة':'03 · Decide with confidence','محاكي قرارات المستشار':'RM Decision Simulator','تنتقل مدخلات العميل إلى المستشار المالي ليبني سيناريوهات متعددة ويقارن النتائج والمخاطر والأثر المحتمل.':'Customer inputs are shared with the Relationship Manager to build scenarios and compare outcomes, risks, and potential impact.','سيناريوهات':'Scenarios','عوائد ومخاطر':'Returns and risks','توصية بشرية':'Human guidance','نموذج تفاعلي تجريبي':'Interactive Concept Demo','جرّب التمويل قبل الالتزام':'Explore financing before committing','غيّر المبلغ والمدة لتشاهد كيف يمكن أن تبدو الرحلة. الأرقام توضيحية فقط.':'Change the amount and term to see how the journey could work. Figures are illustrative only.','مبلغ التمويل المطلوب':'Requested financing amount','مدة السداد:':'Repayment term:','5 سنوات':'5 years','سنة':'year','سنوات':'years','الغرض من التمويل':'Financing purpose','توسعة الأعمال':'Business expansion','شراء معدات':'Equipment purchase','إدارة التدفقات النقدية':'Cash flow management','القسط الشهري التقديري':'Estimated monthly payment','المنتج المقترح مبدئيًا:':'Initial indicative product:','تمويل مرابحة':'Murabaha financing','محاكاة مفاهيمية للتوضيح، وليست عرضًا تمويليًا أو نصيحة مالية. يتطلب السعر الفعلي تقييمًا من الجهة المختصة.':'Conceptual illustration only. Not a financing offer or financial advice. Actual pricing requires an assessment by the relevant provider.','تنتقل الصورة إلى المستشار':'A clearer picture for the RM','عند رغبتك بالمتابعة، يرى المستشار المالي بياناتك الأولية ويبني عليها خيارات مناسبة للنقاش.':'If you choose to continue, the Relationship Manager can review your initial details and discuss relevant options.','ملخص العميل · جاهز للمراجعة':'Customer summary · Ready to review','احتياج تمويلي مبدئي':'Initial financing need','الخيار أ':'Option A','الخيار ب':'Option B','الخيار ج':'Option C','مخاطر: منخفضة':'Risk: Low','مخاطر: متوسطة':'Risk: Medium','أثر نقدي: أقل':'Lower cash flow impact','مدة مختلفة':'Different term','يستطيع المستشار مقارنة الأثر على التدفقات النقدية والعائد المتوقع ومناقشة المخاطر مع العميل.':'The Relationship Manager can compare cash flow impact and potential returns, and discuss risks with the customer.','ابدأ من احتياجك، واتخذ قرارك بوضوح.':'Start with your needs and make a clearer decision.','استكشف الخيارات بنفسك، ثم أكمل مع مستشارك المالي عندما تكون مستعدًا.':'Explore options on your own, then continue with your Relationship Manager when ready.','جرّب المحاكي ←':'Try the simulator ←','Finova · مفهوم منصة قرار مالي موحد':'Finova · Unified Financial Decision Platform Concept','نموذج توضيحي لمشروع ابتكار مصرفي · لا يقدم خدمات أو توصيات مالية فعلية':'Banking innovation concept demo · Does not provide actual financial services or advice',
-'Finova | مقارنة المنتجات':'Product Comparison | Finova','العودة للمنصة':'Back to platform','العودة إلى الصفحة الرئيسية':'Back to the home page','المرحلة الأولى · استكشف':'Stage 1 · Explore','مقارنة التمويل الشخصي':'Personal Financing Comparison','قارني تمويل الأفراد بين البنوك على مبلغ ومدة موحّدين، وراجعي معدل النسبة السنوي والقسط والتكلفة والشروط.':'Compare personal financing across banks using the same amount and term. Review APR, payment, total cost, and terms.','فئات المنتجات':'Product categories','قارني المنتجات ضمن الفئة نفسها، وراجعي التفاصيل قبل اتخاذ القرار.':'Compare products within the same category and review the details before deciding.','تمويل الأفراد':'Personal financing','مقارنة التمويل الشخصي بين البنوك':'Personal financing across banks','مقارنة البطاقات الائتمانية':'Credit card comparison','مقارنة الودائع':'Deposit comparison','مقارنة الاستثمارات':'Investment comparison','ادخار وودائع لأجل':'Savings and term deposits','مقارنة الصناديق الاستثمارية':'Investment fund comparison','أرقام افتراضية للتجربة':'Hypothetical figures for demonstration','تنبيه: جميع الأرقام الظاهرة أمثلة افتراضية لا تمثل عروضًا أو أسعارًا فعلية من البنوك المذكورة.':'Notice: All figures are hypothetical examples and do not represent actual offers or rates from the named banks.','مبلغ التمويل (ريال)':'Financing amount (SAR)','مدة السداد':'Repayment term','تحويل الراتب':'Salary transfer','نعم':'Yes','لا':'No','حسب البنك':'Depending on the bank','معلومة المقارنة':'Comparison detail','الأهلي السعودي':'Saudi National Bank','مصرف الراجحي':'Al Rajhi Bank','بنك الرياض':'Riyad Bank','البنك السعودي الأول':'Saudi Awwal Bank','البنك العربي الوطني':'Arab National Bank','مصرف الإنماء':'Alinma Bank','البنك السعودي الفرنسي':'Banque Saudi Fransi','البنك السعودي للاستثمار':'Saudi Investment Bank','بنك الجزيرة':'Bank Aljazira','بنك البلاد':'Bank Albilad','معدل النسبة السنوي (مثال)':'Annual percentage rate (example)','القسط الشهري التقريبي (مثال)':'Estimated monthly payment (example)','إجمالي المبلغ المستحق (مثال)':'Total amount payable (example)','الرسوم الإدارية (مثال)':'Administrative fee (example)','تحويل الراتب / الأهلية':'Salary transfer / eligibility','المستندات المطلوبة':'Required documents','مصدر البيانات':'Data source','بيانات تجريبية':'Illustrative data','مثال افتراضي':'Hypothetical example','تابعي إلى محاكي التمويل ←':'Continue to the financing simulator →','الأرقام تتغير حسب مبلغ التمويل ومدته، وهي للتوضيح فقط.':'Figures change based on financing amount and term; they are for illustration only.','مقارنة البطاقات الائتمانية بين البنوك':'Credit cards across banks','قارني بطاقات ائتمانية من الفئة نفسها بين البنوك، وراجعي الرسوم ومعدل النسبة والمزايا وشروطها.':'Compare cards in the same tier across banks, including fees, APR, benefits, and terms.','اسم البطاقة وفئتها':'Card name and tier','أساسية — مثال':'Basic — example','الرسوم السنوية (مثال)':'Annual fee (example)','معدل النسبة السنوي APR (مثال)':'Annual percentage rate (APR, example)','معدل الشراء (مثال)':'Purchase rate (example)','الحد الأدنى للسداد (مثال)':'Minimum payment (example)','فترة السماح (مثال)':'Grace period (example)','رسوم السحب النقدي (مثال)':'Cash advance fee (example)','رسوم الشراء بالعملة الأجنبية (مثال)':'Foreign currency transaction fee (example)','المزايا وشروطها':'Benefits and conditions','نقاط — مثال':'Points — example','استرداد — مثال':'Cashback — example','مزايا — مثال':'Benefits — example','سفر — مثال':'Travel — example','شروط الأهلية':'Eligibility','رابط المصدر وتاريخ التحقق':'Source link and verification date','يُضاف عند إدخال بيانات رسمية':'Added when official data is entered','الرسوم والمزايا في الجدول أمثلة افتراضية للعرض فقط.':'Fees and benefits in this table are hypothetical demonstration examples only.','مقارنة الودائع وحسابات الادخار':'Deposits and savings accounts','قارني الودائع لأجل وحسابات الادخار حسب المبلغ والمدة والربح المتوقع وشروط السحب.':'Compare term deposits and savings accounts by amount, term, estimated profit, and withdrawal conditions.','نوع الوديعة':'Deposit type','وديعة لأجل':'Term deposit','حساب ادخار':'Savings account','مبلغ الإيداع (ريال)':'Deposit amount (SAR)','مدة الوديعة':'Deposit term','أمثلة افتراضية لمنتجات ادخار وودائع. الربح الفعلي وشروط كسر الوديعة يحددهما عقد المنتج.':'Hypothetical savings and deposit examples. Actual profit and early withdrawal terms depend on the product agreement.','اسم المنتج':'Product name','معدل الربح السنوي (مثال)':'Annual profit rate (example)','الحد الأدنى للإيداع (مثال)':'Minimum deposit (example)','مدة الربط':'Term','الربح المتوقع (مثال)':'Estimated profit (example)','المبلغ المتوقع عند الاستحقاق (مثال)':'Estimated maturity amount (example)','موعد صرف الأرباح':'Profit payout timing','السحب المبكر / الجزئي':'Early / partial withdrawal','التجديد التلقائي والرسوم':'Automatic renewal and fees','عند الاستحقاق — مثال':'At maturity — example','شهري — مثال':'Monthly — example','قد يُعاد احتساب الربح — مثال':'Profit may be recalculated — example','متاح وفق الشروط — مثال':'Available subject to terms — example','حسب شروط المنتج — مثال':'According to product terms — example','الربح المتوقع تقديري للتوضيح؛ قد تختلف طريقة الاحتساب وشروط السحب بين المنتجات.':'Estimated profit is illustrative; calculation methods and withdrawal terms may vary by product.','مقارنة الصناديق الاستثمارية بين البنوك':'Investment funds across banks','قارني صناديق من الفئة نفسها حسب المخاطر والرسوم والأداء التاريخي ومؤشر المقارنة.':'Compare funds in the same category by risk, fees, historical performance, and benchmark.','نوع الصندوق':'Fund type','أسهم سعودية':'Saudi equities','صكوك':'Sukuk','مرابحة / سوق نقد':'Murabaha / money market','متنوع':'Diversified','الأداء السابق لا يضمن نتائج مستقبلية، والاستثمار قد يؤدي إلى خسارة رأس المال.':'Past performance does not guarantee future results. Investing may result in loss of principal.','اسم المنتج ومدير الصندوق':'Product and fund manager','نوع الصندوق وهدفه':'Fund type and objective','مستوى المخاطر (مثال)':'Risk level (example)','الحد الأدنى للاشتراك (مثال)':'Minimum subscription (example)','الأداء التاريخي لسنة (مثال)':'1-year historical performance (example)','الأداء التاريخي لثلاث سنوات سنويًا (مثال)':'3-year annualized historical performance (example)','مؤشر المقارنة':'Benchmark','رسوم الاشتراك / الإدارة (مثال)':'Subscription / management fees (example)','الاسترداد المتوقع':'Estimated redemption time','العملة / التوافق الشرعي':'Currency / Shariah status','صندوق أسهم سعودية':'Saudi equities fund','صندوق صكوك':'Sukuk fund','صندوق مرابحة / سوق نقد':'Murabaha / money market fund','صندوق متنوع':'Diversified fund','مرتفع':'High','متوسط':'Medium','منخفض إلى متوسط':'Low to medium','متوسط إلى مرتفع':'Medium to high','مؤشر الأسهم السعودية — مثال':'Saudi equities benchmark — example','مؤشر صكوك — مثال':'Sukuk benchmark — example','مؤشر سوق نقد — مثال':'Money market benchmark — example','مؤشر مختلط — مثال':'Mixed benchmark — example','ريال سعودي / يُراجع مستند الصندوق':'SAR / check fund documents','الأداء السابق لا يضمن نتائج مستقبلية، والبيانات هنا افتراضية للتوضيح فقط.':'Past performance does not guarantee future results. All data here is hypothetical and for illustration only.'
-,'وديعة لأجل — مثال':'Term deposit — example','حساب ادخار — مثال':'Savings account — example','مرنة — مثال':'Flexible — example','عند الاستحقاق — مثال':'At maturity — example','شهري — مثال':'Monthly — example','قد يُعاد احتساب الربح — مثال':'Profit may be recalculated — example','متاح وفق الشروط — مثال':'Available under terms — example','حسب شروط المنتج — مثال':'According to product terms — example','يُضاف عند إدخال بيانات رسمية':'Added when official data is entered','3 سنوات':'3 years','7 سنوات':'7 years','12 شهرًا':'12 months'};
-const rev=Object.fromEntries(Object.entries(tr).map(([a,e])=>[e,a]));
-let siteLang=localStorage.getItem('masar-lang')||'ar';
-function tx(value){let s=String(value??'');let key=s.trim();if(siteLang==='en'){if(tr[key])return tr[key];let m=key.match(/^مثال صندوق (\d+)$/);if(m)return `Sample Fund ${m[1]}`;m=key.match(/^(\d+) أشهر$/);if(m)return `${m[1]} months`;m=key.match(/^(\d+) يومًا$/);if(m)return `${m[1]} days`;return key.replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/٬/g,',').replace(/سنوات/g,'years').replace(/سنة/g,'year').replace(/أشهر/g,'months').replace(/ريال/g,'SAR').replace(/ — مثال/g,' — example').replace(/مثال/g,'example')}if(rev[key])return rev[key];let m=key.match(/^Sample Fund (\d+)$/);if(m)return `مثال صندوق ${m[1]}`;m=key.match(/^(\d+) months$/);if(m)return `${m[1]} أشهر`;m=key.match(/^(\d+) days$/);if(m)return `${m[1]} يومًا`;return key.replace(/years/g,'سنوات').replace(/year/g,'سنة').replace(/months/g,'أشهر').replace(/SAR/g,'ريال').replace(/ — example/g,' — مثال').replace(/example/g,'مثال')}
-function translateAll(){document.documentElement.lang=siteLang;document.documentElement.dir=siteLang==='en'?'ltr':'rtl';document.body.setAttribute('lang',siteLang);document.querySelectorAll('body *').forEach(el=>{for(const n of el.childNodes){if(n.nodeType===Node.TEXT_NODE&&n.nodeValue.trim()){const lead=n.nodeValue.match(/^\s*/)[0],trail=n.nodeValue.match(/\s*$/)[0];n.nodeValue=lead+tx(n.nodeValue.trim())+trail}}});document.title=tx(document.title);const b=document.getElementById('langToggle');if(b)b.textContent=siteLang==='en'?'العربية':'English'}
-function toggleLanguage(){siteLang=siteLang==='ar'?'en':'ar';localStorage.setItem('masar-lang',siteLang);translateAll();if(typeof window.render==='function')window.render();if(typeof window.update==='function')window.update()}
-window.tx=tx;window.translateAll=translateAll;window.siteLang=siteLang;window.toggleLanguage=toggleLanguage;
-translateAll();
-</script>
+<header>
+<div class="wrap nav">
+<a class="brand" href="index.html"><span data-ar="سديد" data-en="Sadeed">سديد</span><small data-ar="مفهوم ابتكاري لمصرف الإنماء" data-en="An Alinma Bank Innovation Concept">مفهوم ابتكاري لمصرف الإنماء</small></a>
+<button class="lang" id="language" onclick="toggleLang()">English</button>
+</div>
+</header>
+
+<div class="hero">
+<div class="wrap">
+<div class="eyebrow" data-ar="سديد | تجربة تمويل رقمية" data-en="Sadeed | Digital Financing Experience">سديد | تجربة تمويل رقمية</div>
+<h1 data-ar="حلول مالية تبدأ من احتياجك" data-en="Financial Solutions Built Around Your Needs">حلول مالية تبدأ من احتياجك</h1>
+<p data-ar="منصة تجريبية ضمن مفهوم ابتكاري لمصرف الإنماء، تجمع بين مقارنة الخيارات المالية للأفراد ومحاكاة رحلة التمويل للشركات، لتساعدك على فهم الخيارات واتخاذ قرارات أكثر وضوحًا." data-en="An innovation concept for Alinma Bank, combining financial comparisons for individuals with a business financing journey simulator to support clearer, more informed decisions.">منصة تجريبية ضمن مفهوم ابتكاري لمصرف الإنماء، تجمع بين مقارنة الخيارات المالية للأفراد ومحاكاة رحلة التمويل للشركات، لتساعدك على فهم الخيارات واتخاذ قرارات أكثر وضوحًا.</p>
+</div>
+</div>
+
+<main>
+<section class="wrap" id="segments">
+<div class="heading">
+<div class="eyebrow" style="color:var(--green)" data-ar="اختر مسارك" data-en="Choose Your Journey">اختر مسارك</div>
+<h2 data-ar="خدمات مصممة لاحتياجات مختلفة" data-en="Two Journeys, Different Needs">خدمات مصممة لاحتياجات مختلفة</h2>
+<p data-ar="اختر الفئة المناسبة لك للانتقال إلى تجربتك المالية." data-en="Select your category to begin your financial experience.">اختر الفئة المناسبة لك للانتقال إلى تجربتك المالية.</p>
+</div>
+<div class="grid">
+<article class="card">
+<div class="symbol">👤</div>
+<h3 data-ar="الأفراد" data-en="Individuals">الأفراد</h3>
+<p data-ar="قارن منتجات التمويل والخدمات المالية بين البنوك، واستكشف الخيارات بناءً على احتياجاتك ومبلغ التمويل ومدة السداد." data-en="Compare financial products across banks and explore options based on your needs, financing amount, and repayment term.">قارن منتجات التمويل والخدمات المالية بين البنوك، واستكشف الخيارات بناءً على احتياجاتك ومبلغ التمويل ومدة السداد.</p>
+<div class="tags">
+<span data-ar="مقارنة البنوك" data-en="Bank Comparison">مقارنة البنوك</span>
+<span data-ar="محاكاة التمويل" data-en="Financing Simulation">محاكاة التمويل</span>
+<span data-ar="منتجات الأفراد" data-en="Retail Products">منتجات الأفراد</span>
+</div>
+<a class="btn" href="product-comparison.html" data-ar="الدخول إلى قسم الأفراد ←" data-en="Explore Individual Services →">الدخول إلى قسم الأفراد ←</a>
+</article>
+<article class="card">
+<div class="symbol">🏢</div>
+<h3 data-ar="الشركات" data-en="Businesses">الشركات</h3>
+<p data-ar="حدد احتياج شركتك التمويلي، واستكشف المنتج المناسب مبدئيًا، وحاكِ خطة السداد، وتعرف على المستندات وخطوات مراجعة مدير العلاقة." data-en="Identify your business financing needs, explore an indicative product, simulate repayment, and review documentation and Relationship Manager assessment steps.">حدد احتياج شركتك التمويلي، واستكشف المنتج المناسب مبدئيًا، وحاكِ خطة السداد، وتعرف على المستندات وخطوات مراجعة مدير العلاقة.</p>
+<div class="tags">
+<span data-ar="المرابحة" data-en="Murabaha">المرابحة</span>
+<span data-ar="الإجارة" data-en="Ijarah">الإجارة</span>
+<span data-ar="تقييم أولي" data-en="Initial Assessment">تقييم أولي</span>
+</div>
+<a class="btn secondary" href="#business" data-ar="ابدأ رحلة الشركات ←" data-en="Start Business Journey →">ابدأ رحلة الشركات ←</a>
+</article>
+</div>
+</section>
+
+<section class="business" id="business">
+<div class="wrap">
+<div class="heading">
+<div class="eyebrow" style="color:var(--green)" data-ar="تمويل الشركات" data-en="Business Financing">تمويل الشركات</div>
+<h2 data-ar="رحلتك التمويلية خطوة بخطوة" data-en="Your Financing Journey, Step by Step">رحلتك التمويلية خطوة بخطوة</h2>
+<p data-ar="نموذج تفاعلي يوضح تجربة العميل من تحديد الاحتياج حتى المراجعة الأولية." data-en="An interactive concept demonstrating the journey from financing needs to preliminary review.">نموذج تفاعلي يوضح تجربة العميل من تحديد الاحتياج حتى المراجعة الأولية.</p>
+</div>
+<div class="panel">
+<div class="progress" id="progress"><span></span><span></span><span></span><span></span><span></span></div>
+
+<div id="step1">
+<h3 data-ar="١. حدد احتياج شركتك" data-en="1. Identify Your Business Needs">١. حدد احتياج شركتك</h3>
+<label data-ar="اسم الشركة (تجريبي)" data-en="Company Name (Demo)">اسم الشركة (تجريبي)</label>
+<input id="company" placeholder="اسم الشركة / Company name">
+<label data-ar="الغرض من التمويل" data-en="Financing Purpose">الغرض من التمويل</label>
+<select id="purpose">
+<option value="equipment" data-ar="شراء معدات أو أصول" data-en="Equipment or Asset Purchase">شراء معدات أو أصول</option>
+<option value="project" data-ar="تنفيذ مشروع أو توسعة" data-en="Project Development or Expansion">تنفيذ مشروع أو توسعة</option>
+<option value="working" data-ar="تمويل رأس المال العامل" data-en="Working Capital Financing">تمويل رأس المال العامل</option>
+<option value="property" data-ar="تمويل عقار تجاري" data-en="Commercial Property Financing">تمويل عقار تجاري</option>
+</select>
+<label data-ar="مبلغ التمويل المطلوب (ريال سعودي)" data-en="Requested Financing Amount (SAR)">مبلغ التمويل المطلوب (ريال سعودي)</label>
+<input id="amount" type="number" min="10000" value="500000">
+<label data-ar="مدة التمويل (بالسنوات)" data-en="Financing Term (Years)">مدة التمويل (بالسنوات)</label>
+<select id="years"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option><option value="5">5</option><option value="7">7</option><option value="10">10</option></select>
+<div class="actions"><button class="btn" onclick="next(2)" data-ar="التالي: المنتج المقترح ←" data-en="Next: Suggested Product →">التالي: المنتج المقترح ←</button></div>
+</div>
+
+<div id="step2" class="hidden">
+<h3 data-ar="٢. المنتج التمويلي المقترح" data-en="2. Indicative Financing Product">٢. المنتج التمويلي المقترح</h3>
+<div class="summary">
+<strong id="productName"></strong>
+<p id="productWhy"></p>
+</div>
+<p data-ar="يُقترح المنتج بناءً على نوع الاحتياج فقط. يخضع الاختيار النهائي للسياسات الائتمانية وهيكلة التمويل وموافقة المصرف." data-en="The product is suggested based on financing purpose only. Final selection is subject to credit policy, financing structure, and bank approval.">يُقترح المنتج بناءً على نوع الاحتياج فقط. يخضع الاختيار النهائي للسياسات الائتمانية وهيكلة التمويل وموافقة المصرف.</p>
+<div class="actions">
+<button class="btn secondary" onclick="next(1)" data-ar="السابق" data-en="Back">السابق</button>
+<button class="btn" onclick="next(3)" data-ar="التالي: محاكاة التمويل ←" data-en="Next: Financing Simulation →">التالي: محاكاة التمويل ←</button>
+</div>
+</div>
+
+<div id="step3" class="hidden">
+<h3 data-ar="٣. محاكاة خطة التمويل" data-en="3. Financing Simulation">٣. محاكاة خطة التمويل</h3>
+<div class="resultgrid">
+<div class="metric"><small data-ar="مبلغ التمويل" data-en="Financing Amount">مبلغ التمويل</small><strong id="outAmount"></strong></div>
+<div class="metric"><small data-ar="مدة التمويل" data-en="Financing Term">مدة التمويل</small><strong id="outYears"></strong></div>
+<div class="metric"><small data-ar="القسط الشهري التقديري" data-en="Illustrative Monthly Payment">القسط الشهري التقديري</small><strong id="outPayment"></strong></div>
+<div class="metric"><small data-ar="إجمالي السداد التقديري" data-en="Illustrative Total Repayment">إجمالي السداد التقديري</small><strong id="outTotal"></strong></div>
+</div>
+<p class="note" data-ar="الحساب افتراضي باستخدام معدل ربح سنوي مبسط 5% لغرض العرض فقط، ولا يمثل تسعير مصرف الإنماء أو عرضًا ملزمًا. قد تختلف طريقة احتساب المرابحة والإجارة والرسوم وجدول الدفعات." data-en="Illustrative calculation using a simplified 5% annual profit assumption for demonstration only. It does not represent Alinma Bank pricing or a binding offer. Actual Murabaha, Ijarah, fees, and repayment schedules may differ.">الحساب افتراضي باستخدام معدل ربح سنوي مبسط 5% لغرض العرض فقط، ولا يمثل تسعير مصرف الإنماء أو عرضًا ملزمًا. قد تختلف طريقة احتساب المرابحة والإجارة والرسوم وجدول الدفعات.</p>
+<div class="actions">
+<button class="btn secondary" onclick="next(2)" data-ar="السابق" data-en="Back">السابق</button>
+<button class="btn" onclick="next(4)" data-ar="التالي: بيانات الشركة ←" data-en="Next: Company Financials →">التالي: بيانات الشركة ←</button>
+</div>
+</div>
+
+<div id="step4" class="hidden">
+<h3 data-ar="٤. البيانات المالية والتقييم الأولي" data-en="4. Financial Information and Preliminary Assessment">٤. البيانات المالية والتقييم الأولي</h3>
+<label data-ar="الإيرادات السنوية (ريال سعودي)" data-en="Annual Revenue (SAR)">الإيرادات السنوية (ريال سعودي)</label>
+<input id="revenue" type="number" min="0" value="3000000">
+<label data-ar="المصروفات التشغيلية السنوية (ريال سعودي)" data-en="Annual Operating Expenses (SAR)">المصروفات التشغيلية السنوية (ريال سعودي)</label>
+<input id="expenses" type="number" min="0" value="1800000">
+<label data-ar="الالتزامات السنوية القائمة لخدمة الدين (ريال سعودي)" data-en="Existing Annual Debt Service (SAR)">الالتزامات السنوية القائمة لخدمة الدين (ريال سعودي)</label>
+<input id="debt" type="number" min="0" value="200000">
+<button class="btn" style="margin-top:18px" onclick="assess()" data-ar="احسب المؤشرات الأولية" data-en="Calculate Preliminary Indicators">احسب المؤشرات الأولية</button>
+<div class="summary hidden" id="assessment">
+<strong id="assessmentTitle"></strong>
+<p id="assessmentText"></p>
+</div>
+<p class="note" data-ar="هذه مؤشرات مبسطة وليست قرار أهلية أو تصنيفًا ائتمانيًا. لا تشمل جميع البنود المحاسبية أو التدفقات النقدية أو الضمانات أو السياسات الائتمانية." data-en="These are simplified indicators, not an eligibility decision or credit rating. They do not cover all accounting items, cash flows, collateral, or credit policies.">هذه مؤشرات مبسطة وليست قرار أهلية أو تصنيفًا ائتمانيًا. لا تشمل جميع البنود المحاسبية أو التدفقات النقدية أو الضمانات أو السياسات الائتمانية.</p>
+<div class="actions">
+<button class="btn secondary" onclick="next(3)" data-ar="السابق" data-en="Back">السابق</button>
+<button class="btn" onclick="next(5)" data-ar="التالي: المستندات والمراجعة ←" data-en="Next: Documents and Review →">التالي: المستندات والمراجعة ←</button>
+</div>
+</div>
+
+<div id="step5" class="hidden">
+<h3 data-ar="٥. المستندات ومراجعة مدير العلاقة" data-en="5. Documents and Relationship Manager Review">٥. المستندات ومراجعة مدير العلاقة</h3>
+<p data-ar="أمثلة على المستندات التي قد تُطلب حسب المنتج وطبيعة الشركة:" data-en="Examples of documents that may be requested depending on the product and business:">أمثلة على المستندات التي قد تُطلب حسب المنتج وطبيعة الشركة:</p>
+<div class="check"><input type="checkbox"><span data-ar="السجل التجاري" data-en="Commercial Registration">السجل التجاري</span></div>
+<div class="check"><input type="checkbox"><span data-ar="القوائم المالية" data-en="Financial Statements">القوائم المالية</span></div>
+<div class="check"><input type="checkbox"><span data-ar="كشوف الحسابات البنكية" data-en="Bank Statements">كشوف الحسابات البنكية</span></div>
+<div class="check"><input type="checkbox"><span data-ar="عرض سعر المعدات أو تفاصيل المشروع" data-en="Equipment Quotation or Project Details">عرض سعر المعدات أو تفاصيل المشروع</span></div>
+<label data-ar="رفع مستندات تجريبية (لا تُرسل إلى المصرف)" data-en="Demo Document Upload (Not Sent to the Bank)">رفع مستندات تجريبية (لا تُرسل إلى المصرف)</label>
+<input type="file" id="documents" multiple accept=".pdf,.png,.jpg,.jpeg">
+<div class="summary">
+<strong data-ar="دور مدير العلاقة" data-en="Role of the Relationship Manager">دور مدير العلاقة</strong>
+<p data-ar="يراجع مدير العلاقة بيانات العميل والمستندات، ويتحقق من الاحتياج والملاءة المالية، ويناقش هيكلة التمويل والضمانات والشروط، ثم يحيل الطلب إلى إجراءات التقييم والموافقة المعتمدة لدى المصرف." data-en="The Relationship Manager reviews customer information and documents, validates financing needs and financial capacity, discusses financing structure, collateral, and terms, and refers the application through the bank's established credit assessment and approval process.">يراجع مدير العلاقة بيانات العميل والمستندات، ويتحقق من الاحتياج والملاءة المالية، ويناقش هيكلة التمويل والضمانات والشروط، ثم يحيل الطلب إلى إجراءات التقييم والموافقة المعتمدة لدى المصرف.</p>
+</div>
+<div class="actions">
+<button class="btn secondary" onclick="next(4)" data-ar="السابق" data-en="Back">السابق</button>
+<button class="btn" onclick="finish()" data-ar="عرض ملخص الطلب التجريبي" data-en="View Demo Application Summary">عرض ملخص الطلب التجريبي</button>
+</div>
+<div id="finalResult" class="summary hidden" role="status"></div>
+<p class="note" data-ar="هذا نموذج عرض فقط. لا تُرفع الملفات إلى خادم ولا تُرسل طلبات فعلية إلى مدير العلاقة أو مصرف الإنماء. استخدم بيانات ومستندات وهمية فقط." data-en="Demonstration only. Files are not uploaded to a server, and no real application is sent to a Relationship Manager or Alinma Bank. Use fictional data and documents only.">هذا نموذج عرض فقط. لا تُرفع الملفات إلى خادم ولا تُرسل طلبات فعلية إلى مدير العلاقة أو مصرف الإنماء. استخدم بيانات ومستندات وهمية فقط.</p>
+</div>
+
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<strong data-ar="سديد | Sadeed" data-en="Sadeed | سديد">سديد | Sadeed</strong>
+<p data-ar="مشروع ابتكاري تجريبي لمصرف الإنماء — ليس منصة مصرفية رسمية أو خدمة تمويل فعلية." data-en="An Alinma Bank innovation concept demo — not an official banking platform or actual financing service.">مشروع ابتكاري تجريبي لمصرف الإنماء — ليس منصة مصرفية رسمية أو خدمة تمويل فعلية.</p>
+</div>
+</footer>
 <script>
-const amount=document.getElementById('amount'),term=document.getElementById('term'),purpose=document.getElementById('purpose');function update(){const a=Math.max(0,Number(amount.value)||0),y=Number(term.value),monthly=a*(1+0.045*y)/(y*12);document.getElementById('payment').textContent=Math.round(monthly).toLocaleString('ar-SA')+' ريال';document.getElementById('termLabel').textContent=y+' '+(y===1?'سنة':'سنوات');document.getElementById('summaryAmount').textContent=a.toLocaleString('ar-SA');document.getElementById('summaryTerm').textContent=y;document.getElementById('summaryPurpose').textContent=purpose.value;translateAll()}window.update=update;amount.addEventListener('input',update);term.addEventListener('input',update);purpose.addEventListener('change',update);update();
-</script></body></html>
+let lang=localStorage.getItem('sadeed-lang')||'ar';
+let currentStep=1;
+function phrase(ar,en){return lang==='ar'?ar:en}
+function translate(){
+document.documentElement.lang=lang;
+document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+document.querySelectorAll('[data-ar][data-en]').forEach(el=>{
+el.textContent=el.getAttribute('data-'+lang);
+});
+document.getElementById('language').textContent=lang==='ar'?'English':'العربية';
+document.title=phrase('سديد | مصرف الإنماء','Sadeed | Alinma Bank');
+refresh();
+}
+function toggleLang(){
+lang=lang==='ar'?'en':'ar';
+localStorage.setItem('sadeed-lang',lang);
+translate();
+}
+function money(n){
+return Math.round(n).toLocaleString(lang==='ar'?'ar-SA':'en-US')+' '+phrase('ريال','SAR');
+}
+function data(){
+return {
+amount:Number(document.getElementById('amount').value),
+years:Number(document.getElementById('years').value),
+purpose:document.getElementById('purpose').value
+};
+}
+function product(){
+const p=data().purpose;
+if(p==='equipment')return [
+phrase('الإجارة','Ijarah Financing'),
+phrase('قد تكون مناسبة لتمويل استخدام المعدات أو الأصول وفق هيكلة إجارة معتمدة.','May be suitable for financing the use of equipment or assets under an approved Ijarah structure.')
+];
+if(p==='working')return [
+phrase('المرابحة','Murabaha Financing'),
+phrase('قد تكون مناسبة لبعض احتياجات رأس المال العامل وفق طبيعة الأصول والهيكلة المعتمدة.','May be suitable for certain working capital needs depending on eligible assets and the approved structure.')
+];
+if(p==='property')return [
+phrase('التمويل العقاري التجاري','Commercial Real Estate Financing'),
+phrase('تتحدد الهيكلة المناسبة، مثل الإجارة أو المرابحة، بعد مراجعة العقار والغرض والضمانات.','The appropriate structure, such as Ijarah or Murabaha, depends on the property, purpose, and collateral review.')
+];
+return [
+phrase('تمويل المشاريع / المرابحة','Project Financing / Murabaha'),
+phrase('قد تُدرس المرابحة أو هيكلة تمويل مشاريع بحسب طبيعة المشروع وتدفقاته النقدية.','Murabaha or a project financing structure may be considered depending on the project and its cash flows.')
+];
+}
+function calc(){
+const d=data();
+const total=d.amount*(1+0.05*d.years);
+return {total,payment:total/(d.years*12),annual:total/d.years};
+}
+function refresh(){
+const d=data(),c=calc(),p=product();
+document.getElementById('productName').textContent=p[0];
+document.getElementById('productWhy').textContent=p[1];
+document.getElementById('outAmount').textContent=money(d.amount);
+document.getElementById('outYears').textContent=d.years+' '+phrase('سنوات','years');
+document.getElementById('outPayment').textContent=money(c.payment);
+document.getElementById('outTotal').textContent=money(c.total);
+if(!document.getElementById('assessment').classList.contains('hidden'))assess();
+}
+function next(n){
+if(n===2){
+const d=data();
+if(!Number.isFinite(d.amount)||d.amount<10000||d.amount>1000000000){
+alert(phrase('أدخلي مبلغًا بين 10,000 ومليار ريال.','Enter an amount between SAR 10,000 and SAR 1 billion.'));
+return;
+}
+}
+currentStep=n;
+for(let i=1;i<=5;i++){
+document.getElementById('step'+i).classList.toggle('hidden',i!==n);
+}
+document.querySelectorAll('#progress span').forEach((s,i)=>{
+s.classList.toggle('active',i<n);
+});
+refresh();
+document.getElementById('business').scrollIntoView({behavior:'smooth'});
+}
+function assess(){
+const r=Number(document.getElementById('revenue').value);
+const e=Number(document.getElementById('expenses').value);
+const debt=Number(document.getElementById('debt').value);
+if([r,e,debt].some(x=>!Number.isFinite(x)||x<0)||r===0){
+alert(phrase('أدخلي بيانات مالية صحيحة، وإيرادات أكبر من صفر.','Enter valid financial figures with revenue greater than zero.'));
+return;
+}
+const operating=r-e;
+const service=debt+calc().annual;
+const coverage=service>0?operating/service:0;
+const box=document.getElementById('assessment');
+box.classList.remove('hidden');
+document.getElementById('assessmentTitle').textContent=phrase('ملخص مؤشرات التدفق النقدي المبسطة','Simplified Cash Flow Indicators');
+document.getElementById('assessmentText').textContent=
+phrase('الفائض التشغيلي المبسط: ','Simplified operating surplus: ')+money(operating)+
+phrase(' | إجمالي خدمة الدين السنوية التقديرية: ',' | Estimated annual debt service: ')+money(service)+
+phrase(' | نسبة التغطية التقريبية: ',' | Approximate coverage ratio: ')+coverage.toFixed(2)+'x. '+
+(coverage>=1.25?
+phrase('المؤشر الحسابي يتجاوز الحد الافتراضي المستخدم في النموذج، لكن هذا لا يعني الموافقة أو الأهلية.','The calculated indicator exceeds the demo threshold, but this does not imply eligibility or approval.'):
+phrase('المؤشر الحسابي يستدعي مراجعة إضافية، ولا يمثل رفضًا للتمويل.','The calculated indicator suggests further review, not a financing rejection.'));
+}
+function finish(){
+const company=document.getElementById('company').value.trim()||phrase('شركة تجريبية','Demo Company');
+const files=document.getElementById('documents').files.length;
+const result=document.getElementById('finalResult');
+result.classList.remove('hidden');
+result.textContent=phrase('ملخص تجريبي — ','Demo Summary — ')+company+
+phrase(' | المنتج المقترح: ',' | Suggested product: ')+product()[0]+
+phrase(' | المبلغ: ',' | Amount: ')+money(data().amount)+
+phrase(' | عدد الملفات المختارة محليًا: ',' | Locally selected files: ')+files+
+phrase(' | الحالة: جاهز للعرض التوضيحي فقط، ولم يتم إرسال أي طلب.',' | Status: Demo preview only. No application has been submitted.');
+}
+document.getElementById('amount').addEventListener('input',refresh);
+document.getElementById('years').addEventListener('change',refresh);
+document.getElementById('purpose').addEventListener('change',refresh);
+translate();
+next(1);
+</script>
+</body>
+</html>
